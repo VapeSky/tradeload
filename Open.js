@@ -1,3 +1,3 @@
 function tradeLoad(e){
-  console.log('hi ',e);
+  console.log('hey yo ',e);
 }
